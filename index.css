@@ -1,0 +1,269 @@
+/* for all */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color:rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* for header */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: blue;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(177, 177, 246);
+    font-size: 1.03rem;
+}
+
+#manish img {
+    border-radius: 45%;
+    padding-top: 7px;
+    height: 60px;
+    width: 60px;
+}
+
+.firstsection .leftsection .btn button {
+    background-color: rgb(33, 33, 81);
+    border-radius: 5px;
+    color: white;
+    height: 45px;
+    width: 90px;
+    border: solid white;
+}
+
+/* for main first-section */
+
+.left {
+    font-size: 1.8rem;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    /* it is used to align things by a space in between */
+    align-items: center;
+    /* it is used to align things vertically */
+    margin: -67px 0;
+}
+
+.firstsection>div {
+    width: 30%;
+    margin: 130px 0px;
+}
+
+.leftsection {
+    font-size: 2.5rem;
+}
+
+.rightsection img {
+    width: 80%;
+}
+
+.blue_violet {
+    color: rgb(173, 103, 238);
+}
+
+#element {
+    color: rgb(173, 103, 238);
+}
+
+/* for main second-section */
+
+.secondsection {
+    max-width: 80vw;
+    margin: auto;
+    height: 50vh;
+}
+
+main hr {
+    border: 0px;
+    background: rgb(131, 131, 219);
+    height: 1px;
+    margin: 40px 80px;
+}
+
+.secondsection h1 {
+    font-size: 2rem;
+}
+
+.secondsection .gray {
+    color: gray;
+}
+
+.secondsection .box {
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 80px 0;
+    display: flex;
+}
+
+.secondsection .vertical {
+    height: 75px;
+    width: 1px;
+    background-color: white;
+    margin: 0 150px;
+}
+
+.secondsection .vertical img {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: -60px;
+    left: -23px;
+}
+
+.vertical-title {
+    position: relative;
+    top: 20px;
+    left: 2px;
+    width: 165px;
+}
+
+.vertical-description {
+    position: relative;
+    top: 25px;
+    color: gray;
+    width: 275px;
+    font-size: 10px;
+}
+
+/* fotter */
+
+footer {
+    background-color: rgb(25, 25, 57);
+    height: 50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+
+footer .footer a {
+    color: green;
+    text-decoration: none;
+}
+
+footer .rights {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 10px;
+    color: rgb(200, 241, 118);
+}
+
+/* media  query*/
+
+@media screen and (max-width: 915px) {
+
+    .firstsection {
+        flex-direction: column-reverse;
+    }
+
+    .secondsection .vertical {
+        height: 200px;
+        width: 1px;
+        background-color: white;
+        margin: 0 50px;
+    }
+
+    .secondsection .box {
+        background: white;
+        width: 50vw;
+        height: 2px;
+        margin: 80px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vertical-title {
+        position: relative;
+        top: -112px;
+        left: 47px;
+        width: 165px;
+    }
+
+    .vertical-description {
+        position: relative;
+        top: -80px;
+        color: gray;
+        width: 275px;
+        font-size: 10px;
+        left: 20px;
+    }
+
+    #manish {
+        display: none;
+    }
+
+    nav {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 150%;
+    }
+
+    .secondsection .gray {
+        color: gray;
+        width: 335px;
+    }
+
+    .rightsection img {
+        height: 250px;
+        width: 256px;
+    }
+
+    .firstsection .leftsection {
+        width: 94%;
+        margin-top: -108px;
+        margin-left: 159px;
+    }
+
+    .firstsection .leftsection .btn {
+        margin-left: 115px;
+    }
+
+    main hr {
+        border: 0px;
+        background: rgb(131, 131, 219);
+        height: 1px;
+        margin-left: 58px;
+        width: 80%;
+    }
+
+    main{
+        height: 237vh;
+        width: 100%;
+    }
+
+    footer {
+        background-color: rgb(25, 25, 57);
+        height: 85px;
+        width: 150%;
+    }
+}
